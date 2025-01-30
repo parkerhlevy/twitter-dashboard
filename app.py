@@ -1,10 +1,12 @@
  
 import tweepy
 from flask import Flask, jsonify
+
 import sqlite3
 from datetime import datetime
-
+from flask_cors import CORS
 app = Flask(__name__)
+CORS(app)
 
 # Twitter API Credentials (Replace with your keys)
 API_KEY = "jMyoIJAMdl6ht5j5eR0fBgHhy"
